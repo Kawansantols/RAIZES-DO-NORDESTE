@@ -1,0 +1,272 @@
+{
+  "info": {
+    "_postman_id": "1dde80b7-9c56-4bd6-95a7-176ff37b5e9b",
+    "name": "Raízes do Nordeste",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "34178066",
+    "_collection_link": "https://go.postman.co/collection/34178066-1dde80b7-9c56-4bd6-95a7-176ff37b5e9b?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "T02 - Login válido POST",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        },
+        {
+          "name": "T01 - Cadastro válido",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Unidades",
+      "item": [
+        {
+          "name": "T03 - Criar unidade",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Produtos",
+      "item": [
+        {
+          "name": "T04 - Criar produto",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Estoque",
+      "item": [
+        {
+          "name": "T05 - Atualizar estoque",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Pedidos",
+      "item": [
+        {
+          "name": "T06 - Criar pedido",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Pagamentos",
+      "item": [
+        {
+          "name": "T07 - Pagamento mock",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJhZG1pbkByYWl6ZXNub3JkZXN0ZS5jb20iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3Nzk1NDUyODIsImV4cCI6MTc3OTU3NDA4Mn0.v_lv_Fb_AAoTAiNOtLF2lLhX9LvTU6YUA4d8D3f1GT4",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"unidadeId\": 1,\r\n  \"canalPedido\": \"APP\",\r\n  \"itens\": [\r\n    { \"produtoId\": 1, \"quantidade\": 2 },\r\n    { \"produtoId\": 2, \"quantidade\": 1 }\r\n  ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/pedidos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "pedidos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "T07 - Pagamento mock",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJhZG1pbkByYWl6ZXNub3JkZXN0ZS5jb20iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3Nzk1NDUyODIsImV4cCI6MTc3OTU3NDA4Mn0.v_lv_Fb_AAoTAiNOtLF2lLhX9LvTU6YUA4d8D3f1GT4",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/pagamentos/pedido/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "pagamentos",
+                "pedido",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Fidelidade",
+      "item": [
+        {
+          "name": "T08 - Adicionar pontos",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJhZG1pbkByYWl6ZXNub3JkZXN0ZS5jb20iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3Nzk1NDUyODIsImV4cCI6MTc3OTU3NDA4Mn0.v_lv_Fb_AAoTAiNOtLF2lLhX9LvTU6YUA4d8D3f1GT4",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"usuarioId\": 1,\r\n  \"pontos\": 100\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/fidelidade/adicionar",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "fidelidade",
+                "adicionar"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Erros",
+      "item": [
+        {
+          "name": "T09 - Acesso sem token",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/pedidos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "pedidos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "T10 - Estoque Insuficiente",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJhZG1pbkByYWl6ZXNub3JkZXN0ZS5jb20iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3Nzk1NDUyODIsImV4cCI6MTc3OTU3NDA4Mn0.v_lv_Fb_AAoTAiNOtLF2lLhX9LvTU6YUA4d8D3f1GT4",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"unidadeId\": 1,\r\n  \"canalPedido\": \"APP\",\r\n  \"itens\": [\r\n    { \"produtoId\": 1, \"quantidade\": 999 }\r\n  ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/pedidos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "pedidos"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
